@@ -1,0 +1,24 @@
+.norm-container {
+    background-color: white;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+.norm-boxplot {
+    width: 100%;
+    background-color: white;
+}
+
+.section-title {
+    color: var(--light-text);
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.section-description {
+    color: var(--secondary-text);
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}

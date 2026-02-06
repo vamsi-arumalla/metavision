@@ -1,0 +1,165 @@
+/* File Upload Styling */
+.file-upload {
+  border: 2px dashed var(--primary-light);
+  border-radius: var(--border-radius);
+  background-color: var(--dark-surface-2);
+  transition: var(--transition);
+  cursor: pointer;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.file-upload:hover {
+  border-color: var(--primary);
+  box-shadow: var(--glow);
+}
+
+.file-upload:active {
+  border-color: var(--accent);
+}
+
+.upload-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--light-text);
+}
+
+.upload-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300bcd4' viewBox='0 0 24 24'%3E%3Cpath d='M5 20h14v-2H5v2zm7-18L5.33 15h3.67v-4h6v4h3.67L12 2z'/%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.upload-text {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.upload-button {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.upload-button:hover {
+  background-color: var(--primary-light);
+}
+
+.upload-output {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: var(--border-radius);
+  background-color: var(--dark-surface-2);
+  border-left: 4px solid var(--secondary);
+  min-height: 40px;
+}
+
+/* CSV Table Styling */
+.csv-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.csv-table th,
+.csv-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #333;
+}
+
+.csv-table th {
+  background-color: var(--primary);
+  color: var(--light-text);
+  font-weight: 500;
+}
+
+.csv-table tr {
+  background-color: var(--dark-surface-2);
+}
+
+.csv-table tr:nth-child(even) {
+  background-color: var(--dark-surface);
+}
+
+.csv-table tr:hover {
+  background-color: rgba(0, 188, 212, 0.1);
+}
+
+.csv-preview-container {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-top: 15px;
+  border-radius: var(--border-radius);
+  border: 1px solid #333;
+}
+
+.file-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.file-name {
+  font-weight: 500;
+  color: var(--primary);
+  margin-right: 10px;
+}
+
+.file-size {
+  color: var(--secondary-text);
+  font-size: 0.9rem;
+}
+
+.processing-status {
+  margin-top: 15px;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Success message styling */
+.success-message {
+  display: flex;
+  align-items: center;
+  color: #4caf50;
+  padding: 10px 15px;
+  background-color: rgba(76, 175, 80, 0.1);
+  border-radius: var(--border-radius);
+  font-weight: 500;
+}
+
+.success-icon {
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+/* Loading spinner customization */
+._dash-loading {
+  border-color: var(--primary) !important;
+}
+
+/* Make loading spinner more visible against dark background */
+._dash-loading-callback {
+  border: 3px solid rgba(0, 188, 212, 0.2);
+  border-top-color: var(--primary);
+  border-left-color: var(--primary);
+}

@@ -1,0 +1,464 @@
+/* 3D Visualization Options Styling */
+
+/* 3D options container */
+.visualization-3d-options {
+  background-color: var(--dark-surface-2);
+  padding: 20px;
+  border-radius: var(--border-radius);
+  margin-top: 20px;
+  border: 1px solid #333;
+}
+
+/* Control group for radio buttons */
+.control-group {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #333;
+}
+
+/* Enhanced styling for 3D visualization type controls */
+.control-group:first-child {
+  background: rgba(0, 188, 212, 0.05);
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 188, 212, 0.2);
+  margin-bottom: 20px;
+}
+
+.control-group:first-child .control-label {
+  color: #00BCD4;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.control-group:first-child .radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.control-group:first-child .radio-group label {
+  background: rgba(0, 188, 212, 0.1);
+  padding: 8px 15px;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 188, 212, 0.3);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.control-group:first-child .radio-group label:hover {
+  background: rgba(0, 188, 212, 0.2);
+  border-color: #00BCD4;
+}
+
+.control-group:first-child .radio-group input[type="radio"]:checked+label {
+  background: #00BCD4;
+  color: white;
+  border-color: #00BCD4;
+}
+
+/* Control labels */
+.control-label {
+  font-weight: 500;
+  color: var(--secondary-text);
+  margin-right: 15px;
+  display: inline-block;
+}
+
+/* Radio group styling */
+.radio-group .form-check {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.radio-group .form-check-label {
+  margin: 0 10px 0 5px;
+  color: var(--light-text);
+}
+
+.radio-group .form-check-input {
+  accent-color: var(--primary);
+}
+
+/* Compact controls container */
+.compact-controls-container {
+  margin-top: 15px;
+  padding: 15px;
+  background-color: var(--dark-surface);
+  border-radius: var(--border-radius);
+  border: 1px solid #444;
+}
+
+/* Row of compact controls */
+.compact-controls-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Individual compact control */
+.compact-control {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Compact labels */
+.compact-label {
+  margin-right: 8px;
+  white-space: nowrap;
+  color: var(--secondary-text);
+  font-weight: 500;
+}
+
+/* Compact dropdowns */
+.compact-dropdown {
+  width: 80px;
+}
+
+/* Slide selector dropdown */
+.slide-selector-dropdown {
+  width: 100%;
+}
+
+.slide-selector-dropdown .Select-control,
+.slide-selector-dropdown .dash-dropdown .Select-control,
+.slide-selector-dropdown .dash-dropdown .Select-control .Select-value,
+.slide-selector-dropdown .dash-dropdown .Select-control .Select-placeholder {
+  background-color: var(--dark-surface) !important;
+  border: 2px solid #444 !important;
+  color: var(--light-text) !important;
+  height: 40px !important;
+  min-height: 40px !important;
+}
+
+.slide-selector-dropdown .Select-value-label,
+.slide-selector-dropdown .Select-placeholder {
+  color: var(--light-text) !important;
+  line-height: 36px !important;
+}
+
+.slide-selector-dropdown .Select-arrow {
+  color: var(--light-text) !important;
+}
+
+.slide-selector-dropdown .Select-menu-outer {
+  background-color: var(--dark-surface) !important;
+  border: 2px solid #444 !important;
+  color: var(--light-text) !important;
+}
+
+.slide-selector-dropdown .Select-option {
+  background-color: var(--dark-surface) !important;
+  color: var(--light-text) !important;
+}
+
+.slide-selector-dropdown .Select-option:hover {
+  background-color: var(--primary) !important;
+  color: white !important;
+}
+
+.slide-selector-dropdown .Select-option.is-selected {
+  background-color: var(--primary) !important;
+  color: white !important;
+}
+
+/* Fix for dcc.Dropdown styling - Target the actual dropdown elements */
+.compact-dropdown .Select-control,
+.compact-dropdown .dash-dropdown .Select-control,
+.compact-dropdown .dash-dropdown .Select-control .Select-value,
+.compact-dropdown .dash-dropdown .Select-control .Select-placeholder {
+  background-color: var(--dark-surface) !important;
+  border: 2px solid #444 !important;
+  color: var(--light-text) !important;
+  height: 36px !important;
+  min-height: 36px !important;
+}
+
+.compact-dropdown .Select-value-label,
+.compact-dropdown .Select-placeholder {
+  color: var(--light-text) !important;
+  line-height: 32px !important;
+}
+
+.compact-dropdown .Select-arrow {
+  color: var(--light-text) !important;
+}
+
+.compact-dropdown .Select-menu-outer {
+  background-color: var(--dark-surface) !important;
+  border: 2px solid #444 !important;
+  color: var(--light-text) !important;
+}
+
+.compact-dropdown .Select-option {
+  background-color: var(--dark-surface) !important;
+  color: var(--light-text) !important;
+}
+
+.compact-dropdown .Select-option:hover {
+  background-color: var(--primary) !important;
+  color: white !important;
+}
+
+.compact-dropdown .Select-option.is-selected {
+  background-color: var(--primary) !important;
+  color: white !important;
+}
+
+/* BIG 3D Button Container */
+.big-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+  padding: 30px;
+  background: rgba(0, 188, 212, 0.05);
+  border-radius: 15px;
+  border: 1px solid rgba(0, 188, 212, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animated background for button container */
+.big-button-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0, 188, 212, 0.1), transparent);
+  transition: left 0.6s ease;
+}
+
+.big-button-container:hover::before {
+  left: 100%;
+}
+
+/* BIG 3D Button Styling - Blue Theme with Animations */
+.big-3d-button {
+  font-size: 2.2rem !important;
+  padding: 25px 70px !important;
+  background: linear-gradient(135deg, #00BCD4 0%, #2196F3 100%) !important;
+  color: white !important;
+  border: 2px solid #00BCD4 !important;
+  border-radius: 15px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.5px !important;
+  box-shadow:
+    0 8px 25px rgba(0, 188, 212, 0.3),
+    0 4px 10px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+  cursor: pointer !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  position: relative !important;
+  overflow: hidden !important;
+  min-width: 280px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 12px !important;
+  text-decoration: none !important;
+  outline: none !important;
+}
+
+/* Button hover effects */
+.big-3d-button:hover {
+  background: linear-gradient(135deg, #2196F3 0%, #00BCD4 100%) !important;
+  transform: translateY(-3px) !important;
+  box-shadow:
+    0 15px 35px rgba(0, 188, 212, 0.4),
+    0 8px 15px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
+  border-color: #2196F3 !important;
+}
+
+/* Button active/pressed effect */
+.big-3d-button:active {
+  transform: translateY(-1px) !important;
+  box-shadow:
+    0 10px 25px rgba(0, 188, 212, 0.3),
+    0 5px 10px rgba(0, 0, 0, 0.2),
+    inset 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Button focus effect */
+.big-3d-button:focus {
+  outline: none !important;
+  box-shadow:
+    0 8px 25px rgba(0, 188, 212, 0.3),
+    0 4px 10px rgba(0, 0, 0, 0.2),
+    0 0 0 3px rgba(0, 188, 212, 0.3) !important;
+}
+
+/* Shimmer animation effect */
+.big-3d-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.big-3d-button:hover::before {
+  left: 100%;
+}
+
+/* Pulse animation for the icon */
+.big-3d-button .fas {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Button text animation */
+.big-3d-button span {
+  transition: transform 0.3s ease;
+}
+
+.big-3d-button:hover span {
+  transform: scale(1.05);
+}
+
+/* Loading state for button */
+.big-3d-button.loading {
+  background: linear-gradient(135deg, #666 0%, #888 100%) !important;
+  cursor: not-allowed !important;
+  pointer-events: none !important;
+}
+
+.big-3d-button.loading .fas {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Success state for button */
+.big-3d-button.success {
+  background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%) !important;
+  border-color: #4CAF50 !important;
+}
+
+/* Hidden elements */
+.hidden-element {
+  display: none;
+}
+
+/* 3D Visualization result container */
+.visualization-result {
+  padding: 20px;
+  background-color: var(--dark-surface);
+  border-radius: var(--border-radius);
+  margin-top: 20px;
+  border-left: 4px solid var(--primary);
+  min-height: 400px;
+  position: relative;
+}
+
+/* Loading indicator for 3D view */
+.visualization-loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.loading-spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top: 4px solid var(--primary);
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 15px auto;
+  animation: spin 1s linear infinite;
+}
+
+/* Error state */
+.visualization-error {
+  color: #f44336;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .compact-controls-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .compact-control {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .compact-dropdown {
+    width: 60%;
+  }
+
+  .big-3d-button {
+    font-size: 1.8rem !important;
+    padding: 20px 50px !important;
+    min-width: 240px !important;
+  }
+
+  .big-button-container {
+    padding: 20px;
+    margin: 25px 0;
+  }
+}
+
+/* Additional smooth animations */
+.big-3d-button {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hover state for the entire button container */
+.big-button-container:hover {
+  background: rgba(0, 188, 212, 0.08);
+  border-color: rgba(0, 188, 212, 0.3);
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
